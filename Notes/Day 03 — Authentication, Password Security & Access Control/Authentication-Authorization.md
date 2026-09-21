@@ -210,3 +210,59 @@ MFA
 Account lockout/cooldowns
 Strong passwords
 Monitoring
+
+Credential Stuffing
+
+Attackers use username/password combinations leaked from another service.
+
+Example:
+
+Website A breach
+       ↓
+username + password
+       ↓
+Attacker tries same credentials
+       ↓
+Website B
+
+Defense:
+
+Unique passwords
+Password managers
+MFA
+Breached-password detection
+Password Spraying
+
+Instead of trying many passwords against one account, an attacker tries one common password against many accounts.
+
+Password123
+    ↓
+User A
+User B
+User C
+User D
+
+Defense:
+
+MFA
+Rate limiting
+Detection of unusual login patterns
+Strong authentication policies
+Credential Phishing
+
+An attacker tricks a user into providing credentials to a fake login page.
+
+Fake Email
+    ↓
+Fake Login Page
+    ↓
+Username + Password
+    ↓
+Attacker
+
+Defense:
+
+User awareness
+MFA/passkeys
+Phishing-resistant authentication
+Checking URLs carefully
